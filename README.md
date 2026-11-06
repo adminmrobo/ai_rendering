@@ -1,5 +1,7 @@
 # AI 렌더링 연구실 — 3부작
 
+![AI 렌더링 연구실 — 박사, 조수, 초파리 연구원, 주판봇이 작업대에서 블록 주머니, 떠오르는 3D 머그컵, 거친 화면과 선명한 화면의 모니터 두 대를 다루는 장면](specs/assets/repo/social_preview_1280x640.png)
+
 **보기: https://adminmrobo.github.io/ai_rendering/** (GitHub Pages)
 
 글 · 안상선 ((주)M-Robo 대표) · CC BY-NC 4.0
@@ -45,7 +47,7 @@
 - 표지 프롬프트 `COVER_*`: ch1, 1-2, 1-3, 1-4, 1-5, ch2, 2-1, 2-2, 2-3, 2-4, 2-5, ch3, 3-1, 3-2, 3-3, 3-4, 3-5 (16:9)
 - 목차 표지 정사각 1280×1280 `COVER_INDEX_square_1280.md` (1·2·3부)
 - 표지 프롬프트 18장 한 파일 모음 `COVER_ALL_18.md`
-- 저장소 표지(GitHub 소셜 미리보기 1280×640) 프롬프트 `COVER_REPO_social_1280x640.md`
+- 저장소 표지(GitHub 소셜 미리보기 1280×640) 프롬프트 `COVER_REPO_social_1280x640.md` · 그림 `assets/repo/social_preview_1280x640.png`
 - 표지 그림 18장 `assets/covers/` (원본 PNG와 페이지에 넣은 WebP — 각 편 1600×900, 목차 1000×1000)
 - 첫 화면 대표 그림 `assets/landing/` (원본 1920×1080, 페이지에 넣은 판 1280×720)
 - 이미지 명세 `IMG_*`, 시리즈 기록 `IMG_00_series`(대결 기록 포함), 개념 목록 `KG_00_registry.json`, 받은 그림 원본 `assets/`
