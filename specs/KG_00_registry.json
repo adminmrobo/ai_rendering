@@ -1,0 +1,3912 @@
+{
+ "registry": "AI 렌더링 연구실",
+ "version": "1.16",
+ "updated": "2026-11-01",
+ "iriBase": "urn:lab:",
+ "note": "2026-11-01: 레고→테트리스 블록, 서랍→주머니로 교체",
+ "concepts": [
+  {
+   "id": "lab:concept/machine-learning",
+   "type": "Concept",
+   "label": {
+    "ko": "기계 학습",
+    "en": "machine learning"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/supervised-learning",
+   "type": "Concept",
+   "label": {
+    "ko": "지도 학습",
+    "en": "supervised learning"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": [
+    "lab:concept/machine-learning"
+   ]
+  },
+  {
+   "id": "lab:concept/unsupervised-learning",
+   "type": "Concept",
+   "label": {
+    "ko": "비지도 학습",
+    "en": "unsupervised learning"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": [
+    "lab:concept/machine-learning"
+   ]
+  },
+  {
+   "id": "lab:concept/self-supervised-learning",
+   "type": "Concept",
+   "label": {
+    "ko": "자기 지도 학습",
+    "en": "self-supervised learning"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": [
+    "lab:concept/machine-learning"
+   ]
+  },
+  {
+   "id": "lab:concept/semi-supervised-learning",
+   "type": "Concept",
+   "label": {
+    "ko": "준지도 학습",
+    "en": "semi-supervised learning"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": [
+    "lab:concept/machine-learning"
+   ]
+  },
+  {
+   "id": "lab:term/label",
+   "type": "Term",
+   "label": {
+    "ko": "이름표",
+    "en": "label"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:term/feature",
+   "type": "Term",
+   "label": {
+    "ko": "특징",
+    "en": "feature"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:term/test-set",
+   "type": "Term",
+   "label": {
+    "ko": "시험 데이터",
+    "en": "test set"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:method/nearest-neighbor",
+   "type": "Method",
+   "label": {
+    "ko": "최근접 이웃",
+    "en": "nearest neighbor"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:method/k-means",
+   "type": "Method",
+   "label": {
+    "ko": "k-평균",
+    "en": "k-means"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:method/k-means-plus-plus",
+   "type": "Method",
+   "label": {
+    "ko": "k-평균++",
+    "en": "k-means++"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:task/clustering",
+   "type": "Task",
+   "label": {
+    "ko": "군집화",
+    "en": "clustering"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:task/classification",
+   "type": "Task",
+   "label": {
+    "ko": "분류",
+    "en": "classification"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:task/masked-prediction",
+   "type": "Task",
+   "label": {
+    "ko": "가리고 맞히기",
+    "en": "masked prediction"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/centroid",
+   "type": "Concept",
+   "label": {
+    "ko": "중심",
+    "en": "centroid"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/local-minimum",
+   "type": "Concept",
+   "label": {
+    "ko": "지역 최소값",
+    "en": "local minimum"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/accuracy",
+   "type": "Metric",
+   "label": {
+    "ko": "정확도",
+    "en": "accuracy"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/purity",
+   "type": "Metric",
+   "label": {
+    "ko": "묶음 일치도",
+    "en": "cluster purity"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/fill-error",
+   "type": "Metric",
+   "label": {
+    "ko": "채운 오차",
+    "en": "fill error"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:method/mae",
+   "type": "Method",
+   "label": {
+    "ko": "마스크 오토인코더",
+    "en": "masked autoencoder"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:method/bert",
+   "type": "Method",
+   "label": {
+    "ko": "BERT",
+    "en": "BERT"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/character-faces",
+   "type": "Dataset",
+   "label": {
+    "ko": "캐릭터 얼굴 24장",
+    "en": "character faces (24)"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/digits",
+   "type": "Dataset",
+   "label": {
+    "ko": "손글씨 숫자",
+    "en": "handwritten digits"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/labels-are-costly",
+   "type": "Limitation",
+   "label": {
+    "ko": "이름표가 비싸다",
+    "en": "labels are costly"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/clusters-unnamed",
+   "type": "Limitation",
+   "label": {
+    "ko": "묶음에 이름이 없다",
+    "en": "clusters have no names"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/frontal-only",
+   "type": "Limitation",
+   "label": {
+    "ko": "정면끼리만 비교",
+    "en": "frontal views only"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/rendering",
+   "type": "Concept",
+   "label": {
+    "ko": "렌더링",
+    "en": "rendering"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/projection",
+   "type": "Concept",
+   "label": {
+    "ko": "투영",
+    "en": "projection"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/rasterization",
+   "type": "Method",
+   "label": {
+    "ko": "래스터화",
+    "en": "rasterization"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/z-buffer",
+   "type": "Method",
+   "label": {
+    "ko": "Z-버퍼",
+    "en": "z-buffering"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/coverage",
+   "type": "Concept",
+   "label": {
+    "ko": "커버리지",
+    "en": "coverage"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/occlusion",
+   "type": "Concept",
+   "label": {
+    "ko": "오클루전",
+    "en": "occlusion"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/triangle-mesh",
+   "type": "Concept",
+   "label": {
+    "ko": "삼각형 메시",
+    "en": "triangle mesh"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:term/barycentric-coordinates",
+   "type": "Term",
+   "label": {
+    "ko": "무게중심 좌표",
+    "en": "barycentric coordinates"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/inverse-rendering",
+   "type": "Method",
+   "label": {
+    "ko": "역렌더링",
+    "en": "inverse rendering"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/loss",
+   "type": "Concept",
+   "label": {
+    "ko": "손실",
+    "en": "loss"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/gradient",
+   "type": "Concept",
+   "label": {
+    "ko": "기울기",
+    "en": "gradient"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/differentiable-rendering",
+   "type": "Method",
+   "label": {
+    "ko": "미분 가능한 렌더링",
+    "en": "differentiable rendering"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": [
+    "lab:method/inverse-rendering"
+   ]
+  },
+  {
+   "id": "lab:term/sigmoid",
+   "type": "Term",
+   "label": {
+    "ko": "σ (시그모이드)",
+    "en": "sigmoid"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:term/blur-width",
+   "type": "Term",
+   "label": {
+    "ko": "τ (번짐)",
+    "en": "edge blur width"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/adam",
+   "type": "Method",
+   "label": {
+    "ko": "Adam",
+    "en": "Adam optimizer"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/soft-rasterizer",
+   "type": "Method",
+   "label": {
+    "ko": "소프트 래스터라이저",
+    "en": "soft rasterizer"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": [
+    "lab:method/differentiable-rendering"
+   ]
+  },
+  {
+   "id": "lab:method/nerf",
+   "type": "Method",
+   "label": {
+    "ko": "NeRF",
+    "en": "neural radiance fields"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": [
+    "lab:method/inverse-rendering"
+   ]
+  },
+  {
+   "id": "lab:method/volume-rendering",
+   "type": "Method",
+   "label": {
+    "ko": "볼륨 렌더링",
+    "en": "volume rendering"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/positional-encoding",
+   "type": "Method",
+   "label": {
+    "ko": "위치 인코딩",
+    "en": "positional encoding"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/hierarchical-sampling",
+   "type": "Method",
+   "label": {
+    "ko": "계층적 샘플링",
+    "en": "hierarchical sampling"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/neural-volumes",
+   "type": "Method",
+   "label": {
+    "ko": "Neural Volumes",
+    "en": "neural volumes"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": [
+    "lab:method/inverse-rendering"
+   ]
+  },
+  {
+   "id": "lab:method/gaussian-splatting",
+   "type": "Method",
+   "label": {
+    "ko": "3D 가우시안 스플래팅",
+    "en": "3D Gaussian splatting"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": [
+    "lab:method/inverse-rendering"
+   ]
+  },
+  {
+   "id": "lab:task/novel-view-synthesis",
+   "type": "Task",
+   "label": {
+    "ko": "새 시점 합성",
+    "en": "novel view synthesis"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:task/3d-reconstruction",
+   "type": "Task",
+   "label": {
+    "ko": "3D 재구성",
+    "en": "3D reconstruction"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:task/super-resolution",
+   "type": "Task",
+   "label": {
+    "ko": "초해상도",
+    "en": "super-resolution"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/dlss",
+   "type": "Method",
+   "label": {
+    "ko": "DLSS",
+    "en": "deep learning super sampling"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/temporal-supersampling",
+   "type": "Method",
+   "label": {
+    "ko": "시간적 슈퍼샘플링",
+    "en": "temporal supersampling"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:term/jitter",
+   "type": "Term",
+   "label": {
+    "ko": "지터",
+    "en": "jitter"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:term/motion-vector",
+   "type": "Term",
+   "label": {
+    "ko": "모션 벡터",
+    "en": "motion vector"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/frame-generation",
+   "type": "Method",
+   "label": {
+    "ko": "프레임 생성",
+    "en": "frame generation"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/ghosting",
+   "type": "Concept",
+   "label": {
+    "ko": "고스팅",
+    "en": "ghosting"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:term/tensor-core",
+   "type": "Term",
+   "label": {
+    "ko": "텐서 코어",
+    "en": "tensor core"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/psnr",
+   "type": "Metric",
+   "label": {
+    "ko": "PSNR",
+    "en": "peak signal-to-noise ratio"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/reconstruction-loss",
+   "type": "Metric",
+   "label": {
+    "ko": "재구성 손실",
+    "en": "reconstruction loss"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/clearpose",
+   "type": "Dataset",
+   "label": {
+    "ko": "ClearPose",
+    "en": "ClearPose"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/one-way",
+   "type": "Limitation",
+   "label": {
+    "ko": "한 방향만 간다",
+    "en": "forward only"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/zero-gradient-at-edges",
+   "type": "Limitation",
+   "label": {
+    "ko": "경계에서 기울기 0",
+    "en": "zero gradient at hard edges"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/single-view-ambiguity",
+   "type": "Limitation",
+   "label": {
+    "ko": "한 장으로는 답이 여러 개",
+    "en": "single-view ambiguity"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/slow-per-scene",
+   "type": "Limitation",
+   "label": {
+    "ko": "장면마다 느린 학습",
+    "en": "slow per-scene optimization"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/ghosting-latency",
+   "type": "Limitation",
+   "label": {
+    "ko": "고스팅과 생성 프레임 지연",
+    "en": "ghosting and frame-generation latency"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:method/neural-rendering",
+   "type": "Method",
+   "label": {
+    "ko": "3D 가이드 뉴럴 렌더링",
+    "en": "3D-guided neural rendering"
+   },
+   "firstPage": "(2부 예정, 이전 01_inverse_rendering)",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/distance",
+   "type": "Concept",
+   "label": {
+    "ko": "거리",
+    "en": "distance"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:method/euclidean-distance",
+   "type": "Method",
+   "label": {
+    "ko": "직선 거리",
+    "en": "Euclidean distance"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:concept/distance"
+   ]
+  },
+  {
+   "id": "lab:method/manhattan-distance",
+   "type": "Method",
+   "label": {
+    "ko": "바둑판 거리",
+    "en": "Manhattan distance"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:concept/distance"
+   ]
+  },
+  {
+   "id": "lab:method/standardization",
+   "type": "Method",
+   "label": {
+    "ko": "표준화",
+    "en": "standardization"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/feature-scale",
+   "type": "Concept",
+   "label": {
+    "ko": "특징의 단위",
+    "en": "feature scale"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/number-of-clusters",
+   "type": "Concept",
+   "label": {
+    "ko": "주머니 수 (k)",
+    "en": "number of clusters"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/inertia",
+   "type": "Metric",
+   "label": {
+    "ko": "묶음 안 거리 제곱합",
+    "en": "within-cluster sum of squares"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:method/elbow",
+   "type": "Method",
+   "label": {
+    "ko": "엘보 방법",
+    "en": "elbow method"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/silhouette",
+   "type": "Metric",
+   "label": {
+    "ko": "실루엣 점수",
+    "en": "silhouette score"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:method/hierarchical-clustering",
+   "type": "Method",
+   "label": {
+    "ko": "계층 군집",
+    "en": "hierarchical clustering"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/dendrogram",
+   "type": "Concept",
+   "label": {
+    "ko": "덴드로그램",
+    "en": "dendrogram"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:method/single-linkage",
+   "type": "Method",
+   "label": {
+    "ko": "최단 연결",
+    "en": "single linkage"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:method/hierarchical-clustering"
+   ]
+  },
+  {
+   "id": "lab:method/average-linkage",
+   "type": "Method",
+   "label": {
+    "ko": "평균 연결",
+    "en": "average linkage"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:method/hierarchical-clustering"
+   ]
+  },
+  {
+   "id": "lab:method/complete-linkage",
+   "type": "Method",
+   "label": {
+    "ko": "최장 연결",
+    "en": "complete linkage"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:method/hierarchical-clustering"
+   ]
+  },
+  {
+   "id": "lab:method/ward-linkage",
+   "type": "Method",
+   "label": {
+    "ko": "Ward 연결",
+    "en": "Ward linkage"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:method/hierarchical-clustering"
+   ]
+  },
+  {
+   "id": "lab:concept/outlier",
+   "type": "Concept",
+   "label": {
+    "ko": "외톨이",
+    "en": "outlier"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/chaining",
+   "type": "Concept",
+   "label": {
+    "ko": "사슬 현상",
+    "en": "chaining effect"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/embedding",
+   "type": "Concept",
+   "label": {
+    "ko": "임베딩",
+    "en": "embedding"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/k-chosen-by-hand",
+   "type": "Limitation",
+   "label": {
+    "ko": "주머니 수는 사람이 정함",
+    "en": "k chosen by hand"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/k-one-by-one",
+   "type": "Limitation",
+   "label": {
+    "ko": "k를 하나씩 돌려 봐야 함",
+    "en": "try k one by one"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/pixel-distance",
+   "type": "Limitation",
+   "label": {
+    "ko": "픽셀 거리는 배경·옷에 흔들림",
+    "en": "pixel distance is fragile"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/standard-deviation",
+   "type": "Concept",
+   "label": {
+    "ko": "표준편차",
+    "en": "standard deviation"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/feature-sensitivity",
+   "type": "Concept",
+   "label": {
+    "ko": "특징의 민감도",
+    "en": "feature sensitivity"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:concept/feature-scale"
+   ]
+  },
+  {
+   "id": "lab:dataset/tetris-toy",
+   "type": "Dataset",
+   "label": {
+    "ko": "테트리스 블록 장난감 데이터",
+    "en": "toy Tetris blocks"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/teacher-labels",
+   "type": "Analogy",
+   "label": {
+    "ko": "선생님이 이름을 알려 주기",
+    "en": "a teacher naming pieces"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/block-pouches",
+   "type": "Analogy",
+   "label": {
+    "ko": "블록을 주머니에 나눠 담기",
+    "en": "sorting blocks into pouches"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/fill-in-blank",
+   "type": "Analogy",
+   "label": {
+    "ko": "빈칸 채우기 퍼즐",
+    "en": "fill-in-the-blank puzzle"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/tetris-hidden-rows",
+   "type": "Analogy",
+   "label": {
+    "ko": "테트리스 화면 몇 줄 가리고 맞히기",
+    "en": "guessing hidden Tetris rows"
+   },
+   "firstPage": "1-1_learning_without_labels",
+   "broader": []
+  },
+  {
+   "id": "lab:term/branch-count",
+   "type": "Term",
+   "label": {
+    "ko": "갈래 수",
+    "en": "branch count"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:concept/feature-scale"
+   ]
+  },
+  {
+   "id": "lab:term/aspect-ratio",
+   "type": "Term",
+   "label": {
+    "ko": "모양 비율",
+    "en": "aspect ratio"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/rotation-invariance",
+   "type": "Concept",
+   "label": {
+    "ko": "돌려도 같은 값",
+    "en": "rotation invariance"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": [
+    "lab:concept/distance"
+   ]
+  },
+  {
+   "id": "lab:dataset/tetris-four",
+   "type": "Dataset",
+   "label": {
+    "ko": "테트리스 블록 네 종류",
+    "en": "Tetris blocks: I, O, T, L"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/exam-scores",
+   "type": "Analogy",
+   "label": {
+    "ko": "세 과목 시험 점수를 한 줄에 세우기",
+    "en": "comparing three exam scores"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/block-ruler",
+   "type": "Analogy",
+   "label": {
+    "ko": "블록을 자로 재기 (보이는 그대로 vs 긴 변·짧은 변)",
+    "en": "measuring blocks with a ruler"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/add-pouches",
+   "type": "Analogy",
+   "label": {
+    "ko": "주머니 하나씩 늘려 보기",
+    "en": "adding pouches one by one"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/family-tree",
+   "type": "Analogy",
+   "label": {
+    "ko": "가족 족보",
+    "en": "family tree"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/walk-vs-fly",
+   "type": "Analogy",
+   "label": {
+    "ko": "걸어가는 길과 날아가는 길",
+    "en": "walking vs flying distance"
+   },
+   "firstPage": "1-2_grouping_similar",
+   "broader": []
+  },
+  {
+   "id": "lab:task/rendering",
+   "type": "Task",
+   "label": {
+    "ko": "렌더링",
+    "en": "rendering"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:task/upscaling",
+   "type": "Task",
+   "label": {
+    "ko": "업스케일링",
+    "en": "upscaling"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/resolution",
+   "type": "Concept",
+   "label": {
+    "ko": "해상도",
+    "en": "resolution"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/render-scale",
+   "type": "Concept",
+   "label": {
+    "ko": "렌더링 비율",
+    "en": "render scale"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/pixel-cost",
+   "type": "Concept",
+   "label": {
+    "ko": "픽셀 비용",
+    "en": "per-pixel cost"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/aliasing",
+   "type": "Concept",
+   "label": {
+    "ko": "계단 현상",
+    "en": "aliasing"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:method/supersampling",
+   "type": "Method",
+   "label": {
+    "ko": "슈퍼샘플링",
+    "en": "supersampling"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:method/nearest-interp",
+   "type": "Method",
+   "label": {
+    "ko": "최근접 보간",
+    "en": "nearest-neighbor interpolation"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:method/bilinear-interp",
+   "type": "Method",
+   "label": {
+    "ko": "쌍선형 보간",
+    "en": "bilinear interpolation"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:method/example-based-sr",
+   "type": "Method",
+   "label": {
+    "ko": "예제 기반 업스케일러",
+    "en": "example-based super-resolution"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:method/cnn-sr",
+   "type": "Method",
+   "label": {
+    "ko": "신경망 업스케일러",
+    "en": "CNN super-resolution"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:method/linear-filter",
+   "type": "Method",
+   "label": {
+    "ko": "직선 하나짜리 필터",
+    "en": "learned linear filter"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/training-pair",
+   "type": "Concept",
+   "label": {
+    "ko": "학습 쌍",
+    "en": "training pair"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/render-generated-label",
+   "type": "Concept",
+   "label": {
+    "ko": "렌더러가 만든 정답",
+    "en": "render-generated ground truth"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/data-amount",
+   "type": "Concept",
+   "label": {
+    "ko": "학습 데이터 양",
+    "en": "amount of training data"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/target-quality",
+   "type": "Concept",
+   "label": {
+    "ko": "정답 품질",
+    "en": "target quality"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/dlss",
+   "type": "Concept",
+   "label": {
+    "ko": "DLSS",
+    "en": "Deep Learning Super Sampling"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/dlss-modes",
+   "type": "Concept",
+   "label": {
+    "ko": "DLSS 화질 모드",
+    "en": "DLSS quality modes"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/dlss1",
+   "type": "Concept",
+   "label": {
+    "ko": "DLSS 1.0",
+    "en": "DLSS 1.0"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": [
+    "lab:concept/dlss"
+   ]
+  },
+  {
+   "id": "lab:concept/dlss2",
+   "type": "Concept",
+   "label": {
+    "ko": "DLSS 2.0",
+    "en": "DLSS 2.0"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": [
+    "lab:concept/dlss"
+   ]
+  },
+  {
+   "id": "lab:dataset/tetris-screens",
+   "type": "Dataset",
+   "label": {
+    "ko": "테트리스 화면",
+    "en": "rendered Tetris screens"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/aliasing-loss",
+   "type": "Limitation",
+   "label": {
+    "ko": "작게 그리면 정보가 사라짐",
+    "en": "small render loses detail"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": [
+    "lab:concept/aliasing"
+   ]
+  },
+  {
+   "id": "lab:limitation/rules-cant-recover",
+   "type": "Limitation",
+   "label": {
+    "ko": "규칙은 사라진 무늬를 못 되살림",
+    "en": "fixed rules can't recover detail"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/single-frame",
+   "type": "Limitation",
+   "label": {
+    "ko": "한 장에 없는 정보는 짐작뿐",
+    "en": "single frame lacks information"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/postcard-mural",
+   "type": "Analogy",
+   "label": {
+    "ko": "벽화를 엽서 크기로 먼저 그리기",
+    "en": "mural on a postcard"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/photo-zoom",
+   "type": "Analogy",
+   "label": {
+    "ko": "사진 확대하면 모자이크·뿌옇게",
+    "en": "zooming a photo"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/photo-restorer",
+   "type": "Analogy",
+   "label": {
+    "ko": "사진 복원가의 감",
+    "en": "a photo restorer's intuition"
+   },
+   "firstPage": "3-1_render_small_upscale",
+   "broader": []
+  },
+  {
+   "id": "lab:task/temporal-upsampling",
+   "type": "Task",
+   "label": {
+    "ko": "시간 누적 업스케일링",
+    "en": "temporal upsampling"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:method/jitter",
+   "type": "Method",
+   "label": {
+    "ko": "지터",
+    "en": "sub-pixel jitter"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:method/halton",
+   "type": "Method",
+   "label": {
+    "ko": "할턴 수열",
+    "en": "Halton sequence"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:method/accumulation",
+   "type": "Method",
+   "label": {
+    "ko": "시간 누적",
+    "en": "temporal accumulation"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": [
+    "lab:concept/supersampling"
+   ]
+  },
+  {
+   "id": "lab:concept/history",
+   "type": "Concept",
+   "label": {
+    "ko": "기억",
+    "en": "history buffer"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/motion-vector",
+   "type": "Concept",
+   "label": {
+    "ko": "모션 벡터",
+    "en": "motion vector"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:method/reprojection",
+   "type": "Method",
+   "label": {
+    "ko": "끌어오기",
+    "en": "reprojection"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/disocclusion",
+   "type": "Concept",
+   "label": {
+    "ko": "새로 드러난 자리",
+    "en": "disocclusion"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/history-blur",
+   "type": "Concept",
+   "label": {
+    "ko": "끌어올 때 흐려짐",
+    "en": "resampling blur"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:method/clamping",
+   "type": "Method",
+   "label": {
+    "ko": "기억 잘라내기",
+    "en": "neighborhood clamping"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/trust-tradeoff",
+   "type": "Concept",
+   "label": {
+    "ko": "믿을까 버릴까",
+    "en": "history trust trade-off"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/learned-accumulation",
+   "type": "Concept",
+   "label": {
+    "ko": "배우는 누적",
+    "en": "learned temporal accumulation"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/taa",
+   "type": "Concept",
+   "label": {
+    "ko": "시간 누적 안티에일리어싱",
+    "en": "temporal anti-aliasing (TAA)"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/supersampling",
+   "type": "Concept",
+   "label": {
+    "ko": "슈퍼샘플링",
+    "en": "supersampling"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/tetris-sequence",
+   "type": "Dataset",
+   "label": {
+    "ko": "테트리스 장면 16장",
+    "en": "Tetris frame sequence"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/static-only",
+   "type": "Limitation",
+   "label": {
+    "ko": "멈춘 화면에서만 통함",
+    "en": "works only when static"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/mv-not-trust",
+   "type": "Limitation",
+   "label": {
+    "ko": "모션 벡터는 믿음을 알려 주지 않음",
+    "en": "motion vectors don't tell trust"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/one-rule",
+   "type": "Limitation",
+   "label": {
+    "ko": "규칙 하나로는 둘 다 못 잡음",
+    "en": "one rule can't fit all"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/window-bars",
+   "type": "Analogy",
+   "label": {
+    "ko": "창살 너머를 고개 옮기며 보기",
+    "en": "peeking through window bars"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/moving-dog",
+   "type": "Analogy",
+   "label": {
+    "ko": "달리는 강아지를 옮겨서 겹치기",
+    "en": "aligning photos of a running dog"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/red-cup",
+   "type": "Analogy",
+   "label": {
+    "ko": "치운 컵의 기억 버리기",
+    "en": "forgetting the removed cup"
+   },
+   "firstPage": "3-2_time_helps",
+   "broader": []
+  },
+  {
+   "id": "lab:task/frame-generation",
+   "type": "Task",
+   "label": {
+    "ko": "프레임 생성",
+    "en": "frame generation"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/inbetween",
+   "type": "Concept",
+   "label": {
+    "ko": "사이 장면",
+    "en": "interpolated frame"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:method/hold",
+   "type": "Method",
+   "label": {
+    "ko": "반복",
+    "en": "frame repeat"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:method/blend",
+   "type": "Method",
+   "label": {
+    "ko": "섞기",
+    "en": "cross-fade"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:method/mc-interp",
+   "type": "Method",
+   "label": {
+    "ko": "움직임 따라 옮기기",
+    "en": "motion-compensated interpolation"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/judder",
+   "type": "Concept",
+   "label": {
+    "ko": "저더",
+    "en": "judder"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/ghost-double",
+   "type": "Concept",
+   "label": {
+    "ko": "겹침",
+    "en": "double image"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:method/optical-flow",
+   "type": "Method",
+   "label": {
+    "ko": "광학 흐름",
+    "en": "optical flow"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/screen-effects",
+   "type": "Concept",
+   "label": {
+    "ko": "화면 효과",
+    "en": "screen-space effects"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:method/hybrid-motion",
+   "type": "Method",
+   "label": {
+    "ko": "둘 다 쓰기",
+    "en": "combining motion vectors and optical flow"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/learned-blending",
+   "type": "Concept",
+   "label": {
+    "ko": "배우는 섞기",
+    "en": "learned per-pixel blending"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/latency",
+   "type": "Concept",
+   "label": {
+    "ko": "지연",
+    "en": "latency"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/display-vs-input-rate",
+   "type": "Concept",
+   "label": {
+    "ko": "보이는 장 수와 반응하는 장 수",
+    "en": "displayed vs simulated frame rate"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:method/reflex",
+   "type": "Method",
+   "label": {
+    "ko": "리플렉스",
+    "en": "NVIDIA Reflex"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/mfg",
+   "type": "Concept",
+   "label": {
+    "ko": "다중 프레임 생성",
+    "en": "multi frame generation"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": [
+    "lab:task/frame-generation"
+   ]
+  },
+  {
+   "id": "lab:concept/dlss3",
+   "type": "Concept",
+   "label": {
+    "ko": "DLSS 3",
+    "en": "DLSS 3"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/dlss4",
+   "type": "Concept",
+   "label": {
+    "ko": "DLSS 4",
+    "en": "DLSS 4"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/tetris-fg",
+   "type": "Dataset",
+   "label": {
+    "ko": "테트리스 판 셋",
+    "en": "Tetris frame-generation scenes"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/engine-blind",
+   "type": "Limitation",
+   "label": {
+    "ko": "엔진이 모르는 움직임",
+    "en": "motion vectors miss effects"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": [
+    "lab:concept/screen-effects"
+   ]
+  },
+  {
+   "id": "lab:limitation/no-input",
+   "type": "Limitation",
+   "label": {
+    "ko": "만든 장면은 입력을 모름",
+    "en": "generated frames ignore input"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/light-cost",
+   "type": "Limitation",
+   "label": {
+    "ko": "남은 비싼 일: 빛",
+    "en": "lighting remains expensive"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/flipbook",
+   "type": "Analogy",
+   "label": {
+    "ko": "그림책 애니메이션에 한 장 더",
+    "en": "adding a page to a flipbook"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/stage-light",
+   "type": "Analogy",
+   "label": {
+    "ko": "대본에 없는 조명의 움직임",
+    "en": "stage lighting not in the script"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/video-call",
+   "type": "Analogy",
+   "label": {
+    "ko": "매끄럽지만 늦게 들리는 영상 통화",
+    "en": "smooth but delayed video call"
+   },
+   "firstPage": "3-3_frame_generation",
+   "broader": []
+  },
+  {
+   "id": "lab:task/denoising",
+   "type": "Task",
+   "label": {
+    "ko": "빛 잡음 제거",
+    "en": "Monte Carlo denoising"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:method/ray-tracing",
+   "type": "Method",
+   "label": {
+    "ko": "광선 추적",
+    "en": "ray tracing"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/spp",
+   "type": "Concept",
+   "label": {
+    "ko": "광선 수",
+    "en": "samples per pixel"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/mc-noise",
+   "type": "Concept",
+   "label": {
+    "ko": "잡음",
+    "en": "Monte Carlo noise"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/penumbra",
+   "type": "Concept",
+   "label": {
+    "ko": "반그림자",
+    "en": "penumbra"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": [
+    "lab:concept/mc-noise"
+   ]
+  },
+  {
+   "id": "lab:method/box-filter",
+   "type": "Method",
+   "label": {
+    "ko": "상자 필터",
+    "en": "box filter"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:method/guided-filter",
+   "type": "Method",
+   "label": {
+    "ko": "길잡이 필터",
+    "en": "cross (joint) bilateral filter"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/demodulation",
+   "type": "Concept",
+   "label": {
+    "ko": "빛만 떼어 거르기",
+    "en": "albedo demodulation"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/gbuffer-guide",
+   "type": "Concept",
+   "label": {
+    "ko": "길잡이 그림",
+    "en": "guide buffers (G-buffer)"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/radius-tradeoff",
+   "type": "Concept",
+   "label": {
+    "ko": "반경 고르기",
+    "en": "filter radius trade-off"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:method/learned-denoiser",
+   "type": "Method",
+   "label": {
+    "ko": "배운 필터",
+    "en": "learned denoiser"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:method/kernel-predicting",
+   "type": "Method",
+   "label": {
+    "ko": "섞는 무게 고르기 신경망",
+    "en": "kernel-predicting network"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/per-pixel-adapt",
+   "type": "Concept",
+   "label": {
+    "ko": "자리마다 다르게",
+    "en": "per-pixel adaptivity"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/ray-reconstruction",
+   "type": "Concept",
+   "label": {
+    "ko": "레이 리컨스트럭션",
+    "en": "DLSS Ray Reconstruction"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": [
+    "lab:method/learned-denoiser"
+   ]
+  },
+  {
+   "id": "lab:concept/dlss35",
+   "type": "Concept",
+   "label": {
+    "ko": "DLSS 3.5",
+    "en": "DLSS 3.5"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/tetris-shadow",
+   "type": "Dataset",
+   "label": {
+    "ko": "테트리스 그림자 셋",
+    "en": "Tetris shadow scenes"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/ray-cost",
+   "type": "Limitation",
+   "label": {
+    "ko": "광선은 비싸다",
+    "en": "more rays are expensive"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/hand-tuning",
+   "type": "Limitation",
+   "label": {
+    "ko": "사람이 정하는 반경",
+    "en": "hand-tuned parameters"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/generalization",
+   "type": "Limitation",
+   "label": {
+    "ko": "배운 것과 다른 장면",
+    "en": "out-of-distribution scenes"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/dark-photo",
+   "type": "Analogy",
+   "label": {
+    "ko": "어두운 곳에서 찍은 자글자글한 사진",
+    "en": "grainy low-light photo"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/photo-app",
+   "type": "Analogy",
+   "label": {
+    "ko": "윤곽을 지키는 사진 앱 노이즈 제거",
+    "en": "edge-aware photo noise reduction"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/retoucher",
+   "type": "Analogy",
+   "label": {
+    "ko": "붓 크기를 바꾸는 보정 전문가",
+    "en": "retoucher choosing brush sizes"
+   },
+   "firstPage": "3-4_relight_with_ai",
+   "broader": []
+  },
+  {
+   "id": "lab:task/any-angle",
+   "type": "Task",
+   "label": {
+    "ko": "어느 각도에서든 그리고 알아보기",
+    "en": "render and recognize from any view"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/pipeline",
+   "type": "Concept",
+   "label": {
+    "ko": "아끼기 조합",
+    "en": "rendering pipeline combination"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/render-cost",
+   "type": "Concept",
+   "label": {
+    "ko": "한 장의 일",
+    "en": "rays per frame"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/geometry-pass",
+   "type": "Concept",
+   "label": {
+    "ko": "움직임 정보 (기하)",
+    "en": "geometry pass for motion vectors"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/view-invariant-shading",
+   "type": "Concept",
+   "label": {
+    "ko": "카메라가 돌아도 같은 밝기",
+    "en": "view-independent diffuse shading"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:method/crop-normalize",
+   "type": "Method",
+   "label": {
+    "ko": "자리·크기 맞추기",
+    "en": "bounding-box normalization"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": [
+    "lab:concept/standardization"
+   ]
+  },
+  {
+   "id": "lab:concept/standardization",
+   "type": "Concept",
+   "label": {
+    "ko": "표준화",
+    "en": "standardization"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/view-generalization",
+   "type": "Concept",
+   "label": {
+    "ko": "처음 보는 각도",
+    "en": "generalization to unseen views"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:method/synthetic-data",
+   "type": "Method",
+   "label": {
+    "ko": "렌더러로 학습 사진 찍기",
+    "en": "synthetic training data"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/test-seal",
+   "type": "Concept",
+   "label": {
+    "ko": "시험 봉인",
+    "en": "held-out test set"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/data-leakage",
+   "type": "Concept",
+   "label": {
+    "ko": "데이터 누수",
+    "en": "data leakage"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/dlss4-suite",
+   "type": "Concept",
+   "label": {
+    "ko": "DLSS 4 전체",
+    "en": "DLSS 4 suite"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": [
+    "lab:concept/pipeline"
+   ]
+  },
+  {
+   "id": "lab:dataset/bust-views",
+   "type": "Dataset",
+   "label": {
+    "ko": "흉상 사진 셋",
+    "en": "bust view photos"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/small-loss",
+   "type": "Limitation",
+   "label": {
+    "ko": "작게 그리기의 손해",
+    "en": "upscaling loses information"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/front-only",
+   "type": "Limitation",
+   "label": {
+    "ko": "앞쪽만 본 학습",
+    "en": "front-only training"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/handmade-bust",
+   "type": "Limitation",
+   "label": {
+    "ko": "손수 만든 흉상",
+    "en": "hand-built bust"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/coupons",
+   "type": "Analogy",
+   "label": {
+    "ko": "할인 쿠폰 넷 한꺼번에",
+    "en": "stacking coupons"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/id-photo",
+   "type": "Analogy",
+   "label": {
+    "ko": "증명사진의 얼굴 자리와 크기",
+    "en": "ID photo framing"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/exam-envelope",
+   "type": "Analogy",
+   "label": {
+    "ko": "시험지 봉투",
+    "en": "sealed exam envelope"
+   },
+   "firstPage": "3-5_any_angle_assistant",
+   "broader": []
+  },
+  {
+   "id": "lab:task/dim-reduction",
+   "type": "Task",
+   "label": {
+    "ko": "차원 축소",
+    "en": "dimensionality reduction"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:method/pca",
+   "type": "Method",
+   "label": {
+    "ko": "주성분 분석",
+    "en": "principal component analysis"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/principal-component",
+   "type": "Concept",
+   "label": {
+    "ko": "주성분",
+    "en": "principal component"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/eigenface",
+   "type": "Concept",
+   "label": {
+    "ko": "고유 얼굴",
+    "en": "eigenface"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": [
+    "lab:concept/principal-component"
+   ]
+  },
+  {
+   "id": "lab:concept/latent-space",
+   "type": "Concept",
+   "label": {
+    "ko": "잠재 공간",
+    "en": "latent space"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/variance",
+   "type": "Concept",
+   "label": {
+    "ko": "분산",
+    "en": "variance"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/reconstruction",
+   "type": "Concept",
+   "label": {
+    "ko": "복원",
+    "en": "reconstruction"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/linearity",
+   "type": "Concept",
+   "label": {
+    "ko": "선형",
+    "en": "linearity"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/mean-face",
+   "type": "Concept",
+   "label": {
+    "ko": "평균 얼굴",
+    "en": "mean face"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:method/top-variance-pixels",
+   "type": "Method",
+   "label": {
+    "ko": "많이 변하는 픽셀 고르기",
+    "en": "top-variance pixel selection"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:method/data-augmentation",
+   "type": "Method",
+   "label": {
+    "ko": "그림 늘리기",
+    "en": "data augmentation"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:method/power-iteration",
+   "type": "Method",
+   "label": {
+    "ko": "거듭제곱법",
+    "en": "power iteration"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/nn-agreement",
+   "type": "Metric",
+   "label": {
+    "ko": "이웃 맞히기",
+    "en": "nearest-neighbor agreement"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/recon-error",
+   "type": "Metric",
+   "label": {
+    "ko": "복원 오차",
+    "en": "reconstruction error"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/character-faces-aug",
+   "type": "Dataset",
+   "label": {
+    "ko": "캐릭터 얼굴 240장",
+    "en": "augmented character faces"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/what-encoded",
+   "type": "Limitation",
+   "label": {
+    "ko": "두 숫자가 담은 것",
+    "en": "what the two numbers encode"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/linear-walk",
+   "type": "Limitation",
+   "label": {
+    "ko": "곧은 지도",
+    "en": "linear map"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/empty-region",
+   "type": "Limitation",
+   "label": {
+    "ko": "빈 곳은 유령",
+    "en": "empty regions decode to ghosts"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/height-weight",
+   "type": "Analogy",
+   "label": {
+    "ko": "키·몸무게 지도",
+    "en": "height-weight map"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/shadow-play",
+   "type": "Analogy",
+   "label": {
+    "ko": "그림자 놀이의 기본 손 모양",
+    "en": "shadow-play basic hand shapes"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/double-exposure",
+   "type": "Analogy",
+   "label": {
+    "ko": "겹쳐 인화한 사진",
+    "en": "double-exposure photo"
+   },
+   "firstPage": "1-3_faces_on_a_map",
+   "broader": []
+  },
+  {
+   "id": "lab:task/inpainting",
+   "type": "Task",
+   "label": {
+    "ko": "가린 곳 채우기",
+    "en": "image inpainting"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:method/autoencoder",
+   "type": "Method",
+   "label": {
+    "ko": "오토인코더",
+    "en": "autoencoder"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": [
+    "lab:concept/neural-network"
+   ]
+  },
+  {
+   "id": "lab:concept/bottleneck",
+   "type": "Concept",
+   "label": {
+    "ko": "병목",
+    "en": "bottleneck"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/self-supervised",
+   "type": "Concept",
+   "label": {
+    "ko": "자기 지도 학습",
+    "en": "self-supervised learning"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": [
+    "lab:method/masked-training"
+   ]
+  },
+  {
+   "id": "lab:method/masked-training",
+   "type": "Method",
+   "label": {
+    "ko": "가리고 맞히기",
+    "en": "masked training"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:method/nn-copy",
+   "type": "Method",
+   "label": {
+    "ko": "베끼기",
+    "en": "nearest-neighbor copy"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/overfitting",
+   "type": "Concept",
+   "label": {
+    "ko": "과적합",
+    "en": "overfitting"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/distribution-shift",
+   "type": "Concept",
+   "label": {
+    "ko": "배운 범위 밖",
+    "en": "distribution shift"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/mae",
+   "type": "Concept",
+   "label": {
+    "ko": "MAE",
+    "en": "masked autoencoder"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": [
+    "lab:method/masked-training"
+   ]
+  },
+  {
+   "id": "lab:concept/neural-network",
+   "type": "Concept",
+   "label": {
+    "ko": "신경망",
+    "en": "neural network"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/masked-error",
+   "type": "Metric",
+   "label": {
+    "ko": "가린 곳 오차",
+    "en": "masked reconstruction error"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/faces16",
+   "type": "Dataset",
+   "label": {
+    "ko": "얼굴 16×16 셋",
+    "en": "character faces 16×16"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/small-data",
+   "type": "Limitation",
+   "label": {
+    "ko": "적은 자료의 유연한 상자",
+    "en": "flexible model on small data"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/unseen-mask",
+   "type": "Limitation",
+   "label": {
+    "ko": "처음 보는 자리·크기",
+    "en": "unseen mask positions and sizes"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/out-of-range",
+   "type": "Limitation",
+   "label": {
+    "ko": "배운 범위 밖의 빈칸",
+    "en": "masks larger than training"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/compression-bag",
+   "type": "Analogy",
+   "label": {
+    "ko": "옷 압축 팩",
+    "en": "vacuum compression bag"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/cloze",
+   "type": "Analogy",
+   "label": {
+    "ko": "빈칸 채우기 공부",
+    "en": "cloze practice"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/bigger-blank",
+   "type": "Analogy",
+   "label": {
+    "ko": "연습보다 큰 빈칸 시험",
+    "en": "test blank larger than practice"
+   },
+   "firstPage": "1-4_mask_and_predict",
+   "broader": []
+  },
+  {
+   "id": "lab:task/identification",
+   "type": "Task",
+   "label": {
+    "ko": "사람 알아보기",
+    "en": "identification"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:method/one-shot-nn",
+   "type": "Method",
+   "label": {
+    "ko": "이름표 한 장으로 알아보기",
+    "en": "one-shot nearest neighbor"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/feature",
+   "type": "Concept",
+   "label": {
+    "ko": "특징",
+    "en": "feature"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/pose-variation",
+   "type": "Concept",
+   "label": {
+    "ko": "각도 변화",
+    "en": "pose variation"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:method/color-histogram",
+   "type": "Method",
+   "label": {
+    "ko": "색 비율",
+    "en": "color histogram"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": [
+    "lab:concept/feature"
+   ]
+  },
+  {
+   "id": "lab:concept/invariance",
+   "type": "Concept",
+   "label": {
+    "ko": "불변성",
+    "en": "invariance"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/char-busts",
+   "type": "Dataset",
+   "label": {
+    "ko": "캐릭터 흉상 사진",
+    "en": "character bust photos"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/pose-dominates",
+   "type": "Limitation",
+   "label": {
+    "ko": "각도가 사람을 덮는다",
+    "en": "pose dominates identity"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/same-color",
+   "type": "Limitation",
+   "label": {
+    "ko": "같은 색은 구별 못 함",
+    "en": "same colors confuse"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/class-photo",
+   "type": "Analogy",
+   "label": {
+    "ko": "증명사진으로 단체 사진에서 찾기",
+    "en": "finding friends in a class photo"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/back-view",
+   "type": "Analogy",
+   "label": {
+    "ko": "뒷모습 착각",
+    "en": "mistaking someone from behind"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/hair-color",
+   "type": "Analogy",
+   "label": {
+    "ko": "머리 색·가방 색으로 알아보기",
+    "en": "recognizing by hair or bag color"
+   },
+   "firstPage": "1-5_who_is_this",
+   "broader": []
+  },
+  {
+   "id": "lab:task/inverse-rendering",
+   "type": "Task",
+   "label": {
+    "ko": "역렌더링",
+    "en": "inverse rendering"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:method/pinhole",
+   "type": "Method",
+   "label": {
+    "ko": "핀홀 카메라",
+    "en": "pinhole camera model"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/perspective",
+   "type": "Concept",
+   "label": {
+    "ko": "원근",
+    "en": "perspective projection"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/focal-length",
+   "type": "Concept",
+   "label": {
+    "ko": "초점 거리",
+    "en": "focal length"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/scale-ambiguity",
+   "type": "Concept",
+   "label": {
+    "ko": "크기와 거리의 모호함",
+    "en": "scale-depth ambiguity"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/ill-posed",
+   "type": "Concept",
+   "label": {
+    "ko": "모호함 (잘 정의되지 않은 역문제)",
+    "en": "ill-posed inverse problem"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/depth",
+   "type": "Concept",
+   "label": {
+    "ko": "깊이",
+    "en": "depth"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/shading",
+   "type": "Concept",
+   "label": {
+    "ko": "밝기의 단서",
+    "en": "shading cue"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:method/sdf",
+   "type": "Method",
+   "label": {
+    "ko": "거리 함수",
+    "en": "signed distance function"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:method/sphere-tracing",
+   "type": "Method",
+   "label": {
+    "ko": "광선 따라 걷기",
+    "en": "sphere tracing"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/silhouette",
+   "type": "Concept",
+   "label": {
+    "ko": "실루엣",
+    "en": "silhouette"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/pixel-diff",
+   "type": "Metric",
+   "label": {
+    "ko": "다른 픽셀 수",
+    "en": "pixel difference"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/mug-world",
+   "type": "Dataset",
+   "label": {
+    "ko": "머그컵 세상",
+    "en": "mug world"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/scale",
+   "type": "Limitation",
+   "label": {
+    "ko": "크기·거리 섞임",
+    "en": "scale lost"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/hidden",
+   "type": "Limitation",
+   "label": {
+    "ko": "뒤쪽은 없다",
+    "en": "hidden side lost"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/depth-lost",
+   "type": "Limitation",
+   "label": {
+    "ko": "깊이는 사라진다",
+    "en": "depth lost"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/pinhole-box",
+   "type": "Analogy",
+   "label": {
+    "ko": "바늘구멍 사진기",
+    "en": "pinhole box camera"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/group-photo",
+   "type": "Analogy",
+   "label": {
+    "ko": "단체 사진 속 가려진 친구",
+    "en": "hidden friend in group photo"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/flashlight",
+   "type": "Analogy",
+   "label": {
+    "ko": "손전등으로 벽 비추기",
+    "en": "raking flashlight"
+   },
+   "firstPage": "2-1_why_photos_are_flat",
+   "broader": []
+  },
+  {
+   "id": "lab:method/analysis-by-synthesis",
+   "type": "Method",
+   "label": {
+    "ko": "합성에 의한 분석",
+    "en": "analysis by synthesis"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/iou",
+   "type": "Metric",
+   "label": {
+    "ko": "겹친 비율",
+    "en": "intersection over union"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:method/grid-search",
+   "type": "Method",
+   "label": {
+    "ko": "격자 찾기",
+    "en": "grid search"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:method/random-search",
+   "type": "Method",
+   "label": {
+    "ko": "무작위 찾기",
+    "en": "random search"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/curse-dim",
+   "type": "Concept",
+   "label": {
+    "ko": "차원의 저주",
+    "en": "curse of dimensionality"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:method/coordinate-search",
+   "type": "Method",
+   "label": {
+    "ko": "다듬기",
+    "en": "coordinate search"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/render-budget",
+   "type": "Concept",
+   "label": {
+    "ko": "몽타주 장 수",
+    "en": "rendering budget"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/ambiguity-valley",
+   "type": "Concept",
+   "label": {
+    "ko": "골짜기",
+    "en": "ambiguity valley"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/cup-photo",
+   "type": "Dataset",
+   "label": {
+    "ko": "컵 사진 한 장",
+    "en": "single cup silhouette"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/human-in-loop",
+   "type": "Limitation",
+   "label": {
+    "ko": "사람이 보고 고친다",
+    "en": "manual adjustment"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/coarse",
+   "type": "Limitation",
+   "label": {
+    "ko": "대충 찾기에서 멈춤",
+    "en": "coarse search plateaus"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/slow-refine",
+   "type": "Limitation",
+   "label": {
+    "ko": "다듬기는 느리다",
+    "en": "refinement scales with parameters"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/montage",
+   "type": "Analogy",
+   "label": {
+    "ko": "몽타주 고쳐 그리기",
+    "en": "police sketch"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/lost-key",
+   "type": "Analogy",
+   "label": {
+    "ko": "운동장에서 열쇠 찾기",
+    "en": "finding a lost key"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/radio-dial",
+   "type": "Analogy",
+   "label": {
+    "ko": "라디오 다이얼 맞추기",
+    "en": "tuning a radio dial"
+   },
+   "firstPage": "2-2_drawing_a_montage",
+   "broader": []
+  },
+  {
+   "id": "lab:method/hard-silhouette",
+   "type": "Method",
+   "label": {
+    "ko": "딱딱한 실루엣",
+    "en": "hard silhouette rendering"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:method/soft-silhouette",
+   "type": "Method",
+   "label": {
+    "ko": "부드러운 실루엣",
+    "en": "soft silhouette"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:method/gradient-descent",
+   "type": "Method",
+   "label": {
+    "ko": "경사 하강",
+    "en": "gradient descent"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/step-function",
+   "type": "Concept",
+   "label": {
+    "ko": "계단 함수",
+    "en": "step function"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/temperature",
+   "type": "Concept",
+   "label": {
+    "ko": "번짐 폭 τ",
+    "en": "blur width (temperature)"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/blur-bias",
+   "type": "Concept",
+   "label": {
+    "ko": "번짐 치우침",
+    "en": "smoothing bias"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/annealing",
+   "type": "Concept",
+   "label": {
+    "ko": "번짐 줄이기",
+    "en": "coarse-to-fine annealing"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/backward",
+   "type": "Concept",
+   "label": {
+    "ko": "거꾸로 계산",
+    "en": "backward pass"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/time-budget",
+   "type": "Concept",
+   "label": {
+    "ko": "같은 계산 시간",
+    "en": "equal compute budget"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/zero-gradient",
+   "type": "Limitation",
+   "label": {
+    "ko": "기울기가 0",
+    "en": "zero gradient"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/blur-tradeoff",
+   "type": "Limitation",
+   "label": {
+    "ko": "번짐의 득실",
+    "en": "blur trade-off"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/single-view",
+   "type": "Limitation",
+   "label": {
+    "ko": "사진 한 장의 모호함",
+    "en": "single-view ambiguity"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/stairs",
+   "type": "Analogy",
+   "label": {
+    "ko": "계단 위의 공",
+    "en": "ball on stairs"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/blurry-glasses",
+   "type": "Analogy",
+   "label": {
+    "ko": "흐린 안경",
+    "en": "blurry glasses"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/foggy-mountain",
+   "type": "Analogy",
+   "label": {
+    "ko": "안개 낀 산 내려오기",
+    "en": "descending a foggy hill"
+   },
+   "firstPage": "2-3_stairs_and_slides",
+   "broader": []
+  },
+  {
+   "id": "lab:method/single-carve",
+   "type": "Method",
+   "label": {
+    "ko": "한 장으로 깎기",
+    "en": "single-view silhouette carving"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:method/visual-hull",
+   "type": "Method",
+   "label": {
+    "ko": "시각 껍질",
+    "en": "visual hull"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:method/hole-analysis",
+   "type": "Method",
+   "label": {
+    "ko": "단면으로 오차 찾기",
+    "en": "cross-section error analysis"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/voxel-grid",
+   "type": "Concept",
+   "label": {
+    "ko": "부피 격자",
+    "en": "voxel grid"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/view-spread",
+   "type": "Concept",
+   "label": {
+    "ko": "고르게 퍼진 방향",
+    "en": "view coverage"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/hull-ceiling",
+   "type": "Concept",
+   "label": {
+    "ko": "천장",
+    "en": "visual hull limit"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/through-hole",
+   "type": "Concept",
+   "label": {
+    "ko": "뚫린 구멍",
+    "en": "through hole"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/concavity",
+   "type": "Concept",
+   "label": {
+    "ko": "오목한 구멍",
+    "en": "concavity"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:method/space-carving",
+   "type": "Method",
+   "label": {
+    "ko": "공간 깎기",
+    "en": "space carving"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/mug-views",
+   "type": "Dataset",
+   "label": {
+    "ko": "머그컵 실루엣 여러 장",
+    "en": "multi-view mug silhouettes"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/depth-unknown",
+   "type": "Limitation",
+   "label": {
+    "ko": "깊이를 모른다",
+    "en": "unknown depth"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/plateau",
+   "type": "Limitation",
+   "label": {
+    "ko": "천장에서 멈춤",
+    "en": "plateau below the hull limit"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/concavity",
+   "type": "Limitation",
+   "label": {
+    "ko": "오목한 곳은 못 판다",
+    "en": "concavities invisible to silhouettes"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/flashlight-shadow",
+   "type": "Analogy",
+   "label": {
+    "ko": "손전등 그림자",
+    "en": "flashlight shadow"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/sculptor",
+   "type": "Analogy",
+   "label": {
+    "ko": "조각가의 돌 깎기",
+    "en": "sculptor carving stone"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/donut-bowl",
+   "type": "Analogy",
+   "label": {
+    "ko": "도넛과 그릇",
+    "en": "donut and bowl"
+   },
+   "firstPage": "2-4_many_angles",
+   "broader": []
+  },
+  {
+   "id": "lab:method/free-space-carving",
+   "type": "Method",
+   "label": {
+    "ko": "빈 곳 깎기",
+    "en": "free-space carving"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:method/view-planning",
+   "type": "Method",
+   "label": {
+    "ko": "깊이 카메라 배치",
+    "en": "view planning for depth"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:method/sealed-view-eval",
+   "type": "Method",
+   "label": {
+    "ko": "봉인된 새 각도 채점",
+    "en": "held-out view evaluation"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/depth-map",
+   "type": "Concept",
+   "label": {
+    "ko": "깊이 사진",
+    "en": "depth map"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/visual-hull",
+   "type": "Concept",
+   "label": {
+    "ko": "시각 껍질",
+    "en": "visual hull"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/grid-resolution",
+   "type": "Concept",
+   "label": {
+    "ko": "격자 거칠기",
+    "en": "grid resolution error"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/depth-noise",
+   "type": "Concept",
+   "label": {
+    "ko": "깊이 잡음",
+    "en": "depth noise"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:concept/voting",
+   "type": "Concept",
+   "label": {
+    "ko": "투표",
+    "en": "multi-view voting"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:method/tsdf",
+   "type": "Method",
+   "label": {
+    "ko": "부호 있는 거리 평균",
+    "en": "truncated signed distance fusion"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:metric/depth-accuracy",
+   "type": "Metric",
+   "label": {
+    "ko": "깊이 맞음 비율",
+    "en": "depth accuracy within 0.1"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:dataset/mug-depth",
+   "type": "Dataset",
+   "label": {
+    "ko": "머그컵 실루엣과 깊이 사진",
+    "en": "mug silhouettes and depth maps"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/unseen-below",
+   "type": "Limitation",
+   "label": {
+    "ko": "컵 밑이 안 보인다",
+    "en": "unseen underside"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/fit-only-seen",
+   "type": "Limitation",
+   "label": {
+    "ko": "쓴 각도에만 맞을 수 있다",
+    "en": "overfitting to used views"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:limitation/needs-depth-sensor",
+   "type": "Limitation",
+   "label": {
+    "ko": "깊이 센서가 필요하다",
+    "en": "requires a depth sensor"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/ruler",
+   "type": "Analogy",
+   "label": {
+    "ko": "컵 속에 자 넣기",
+    "en": "ruler in a cup"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/glass-table",
+   "type": "Analogy",
+   "label": {
+    "ko": "유리 탁자 밑에서 보기",
+    "en": "looking up through a glass table"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  },
+  {
+   "id": "lab:analogy/witnesses",
+   "type": "Analogy",
+   "label": {
+    "ko": "여러 사람의 증언",
+    "en": "multiple witnesses"
+   },
+   "firstPage": "2-5_mug_in_3d",
+   "broader": []
+  }
+ ],
+ "works": [
+  {
+   "id": "macqueen1967some",
+   "title": "Some Methods for Classification and Analysis of Multivariate Observations",
+   "year": 1967
+  },
+  {
+   "id": "lloyd1982least",
+   "title": "Least Squares Quantization in PCM",
+   "year": 1982
+  },
+  {
+   "id": "arthur2007kmeans",
+   "title": "k-means++: The Advantages of Careful Seeding",
+   "year": 2007
+  },
+  {
+   "id": "he2022masked",
+   "title": "Masked Autoencoders Are Scalable Vision Learners",
+   "year": 2022
+  },
+  {
+   "id": "chapelle2006semi",
+   "title": "Semi-Supervised Learning",
+   "year": 2006
+  },
+  {
+   "id": "cover1967nearest",
+   "title": "Nearest Neighbor Pattern Classification",
+   "year": 1967
+  },
+  {
+   "id": "devlin2019bert",
+   "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+   "year": 2019
+  },
+  {
+   "id": "ahn2024lecture",
+   "title": "Neural Radiance Fields and Gaussian Splatting — 2024.10.17 2차 강의 노트",
+   "year": 2024
+  },
+  {
+   "id": "adminmrobo2026pack",
+   "title": "fruitfly-lab-expressions — 연구실 캐릭터 표정 팩 (커밋 ea5da3f)",
+   "year": 2026
+  },
+  {
+   "id": "pedregosa2011scikit",
+   "title": "Scikit-learn: Machine Learning in Python",
+   "year": 2011
+  },
+  {
+   "id": "mildenhall2020nerf",
+   "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+   "year": 2020
+  },
+  {
+   "id": "lombardi2019neural",
+   "title": "Neural Volumes: Learning Dynamic Renderable Volumes from Images",
+   "year": 2019
+  },
+  {
+   "id": "kerbl2023gaussian",
+   "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+   "year": 2023
+  },
+  {
+   "id": "kato2018neural",
+   "title": "Neural 3D Mesh Renderer",
+   "year": 2018
+  },
+  {
+   "id": "liu2019soft",
+   "title": "Soft Rasterizer: A Differentiable Renderer for Image-based 3D Reasoning",
+   "year": 2019
+  },
+  {
+   "id": "tancik2020fourier",
+   "title": "Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains",
+   "year": 2020
+  },
+  {
+   "id": "chen2022clearpose",
+   "title": "ClearPose: Large-scale Transparent Object Dataset and Benchmark",
+   "year": 2022
+  },
+  {
+   "id": "nvidia2020dlss2",
+   "title": "NVIDIA DLSS 2.0: A Big Leap In AI Rendering",
+   "year": 2020
+  },
+  {
+   "id": "nvidia2021dlss",
+   "title": "NVIDIA DLSS: Coming To Rust, DOOM Eternal, LEGO Builder's Journey And More This Month",
+   "year": 2021
+  },
+  {
+   "id": "smith2020nvidia",
+   "title": "NVIDIA Intros DLSS 2.0: Ditches Per-Game Training, Adds Motion Vectors for Better Quality",
+   "year": 2020
+  },
+  {
+   "id": "nvidia2025dlss4",
+   "title": "Technical Insights into DLSS 4: Multi Frame Generation and Transformer-Based Architectures",
+   "year": 2025
+  },
+  {
+   "id": "nvidiaDlssDev",
+   "title": "NVIDIA DLSS (개발자 페이지, DLSS 4.5 개요)",
+   "year": null
+  },
+  {
+   "id": "wikipediaDlss",
+   "title": "Deep Learning Super Sampling (Wikipedia)",
+   "year": 2026
+  },
+  {
+   "id": "nvidia2026dlss5",
+   "title": "DLSS 5: 3D-Guided Neural Rendering",
+   "year": 2026
+  },
+  {
+   "id": "thorndike1953who",
+   "title": "Who Belongs in the Family?",
+   "year": 1953
+  },
+  {
+   "id": "rousseeuw1987silhouettes",
+   "title": "Silhouettes: A Graphical Aid to the Interpretation and Validation of Cluster Analysis",
+   "year": 1987
+  },
+  {
+   "id": "ward1963hierarchical",
+   "title": "Hierarchical Grouping to Optimize an Objective Function",
+   "year": 1963
+  },
+  {
+   "id": "sokal1958statistical",
+   "title": "A Statistical Method for Evaluating Systematic Relationships",
+   "year": 1958
+  },
+  {
+   "id": "jain2010data",
+   "title": "Data Clustering: 50 Years Beyond K-means",
+   "year": 2010
+  },
+  {
+   "id": "virtanen2020scipy",
+   "title": "SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python",
+   "year": 2020
+  },
+  {
+   "id": "unity2025dlss",
+   "title": "Deep learning super sampling (DLSS) in HDRP — High Definition Render Pipeline 17.3 manual",
+   "year": 2025
+  },
+  {
+   "id": "freeman2002example",
+   "title": "Example-Based Super-Resolution",
+   "year": 2002
+  },
+  {
+   "id": "dong2014srcnn",
+   "title": "Learning a Deep Convolutional Network for Image Super-Resolution",
+   "year": 2014
+  },
+  {
+   "id": "karis2014high",
+   "title": "High Quality Temporal Supersampling",
+   "year": 2014
+  },
+  {
+   "id": "yang2020survey",
+   "title": "A Survey of Temporal Antialiasing Techniques",
+   "year": 2020
+  },
+  {
+   "id": "halton1960efficiency",
+   "title": "On the Efficiency of Certain Quasi-Random Sequences of Points in Evaluating Multi-Dimensional Integrals",
+   "year": 1960
+  },
+  {
+   "id": "nvidia2022dlss3",
+   "title": "NVIDIA DLSS 3: AI-Powered Performance Multiplier Boosts Frame Rates By Up To 4X",
+   "year": 2022
+  },
+  {
+   "id": "horn1981determining",
+   "title": "Determining Optical Flow",
+   "year": 1981
+  },
+  {
+   "id": "nvidia2023dlss35",
+   "title": "NVIDIA DLSS 3.5: Enhancing Ray Tracing With AI",
+   "year": 2023
+  },
+  {
+   "id": "schied2017svgf",
+   "title": "Spatiotemporal Variance-Guided Filtering: Real-Time Reconstruction for Path-Traced Global Illumination",
+   "year": 2017
+  },
+  {
+   "id": "bako2017kpcn",
+   "title": "Kernel-Predicting Convolutional Networks for Denoising Monte Carlo Renderings",
+   "year": 2017
+  },
+  {
+   "id": "kajiya1986rendering",
+   "title": "The Rendering Equation",
+   "year": 1986
+  },
+  {
+   "id": "nvidia2025dlss4news",
+   "title": "NVIDIA DLSS 4 Introduces Multi Frame Generation & Enhancements For All DLSS Technologies",
+   "year": 2025
+  },
+  {
+   "id": "shotton2011realtime",
+   "title": "Real-Time Human Pose Recognition in Parts from Single Depth Images",
+   "year": 2011
+  },
+  {
+   "id": "kaufman2012leakage",
+   "title": "Leakage in Data Mining: Formulation, Detection, and Avoidance",
+   "year": 2012
+  },
+  {
+   "id": "pearson1901lines",
+   "title": "On Lines and Planes of Closest Fit to Systems of Points in Space",
+   "year": 1901
+  },
+  {
+   "id": "turk1991eigenfaces",
+   "title": "Eigenfaces for Recognition",
+   "year": 1991
+  },
+  {
+   "id": "jolliffe2016pca",
+   "title": "Principal Component Analysis: A Review and Recent Developments",
+   "year": 2016
+  },
+  {
+   "id": "vandermaaten2008tsne",
+   "title": "Visualizing Data using t-SNE",
+   "year": 2008
+  },
+  {
+   "id": "hinton2006reducing",
+   "title": "Reducing the Dimensionality of Data with Neural Networks",
+   "year": 2006
+  },
+  {
+   "id": "vincent2008denoising",
+   "title": "Extracting and Composing Robust Features with Denoising Autoencoders",
+   "year": 2008
+  },
+  {
+   "id": "pathak2016context",
+   "title": "Context Encoders: Feature Learning by Inpainting",
+   "year": 2016
+  },
+  {
+   "id": "kingma2015adam",
+   "title": "Adam: A Method for Stochastic Optimization",
+   "year": 2015
+  },
+  {
+   "id": "zhao2003face",
+   "title": "Face Recognition: A Literature Survey",
+   "year": 2003
+  },
+  {
+   "id": "swain1991color",
+   "title": "Color Indexing",
+   "year": 1991
+  },
+  {
+   "id": "hartley2004multiple",
+   "title": "Multiple View Geometry in Computer Vision (2nd ed.)",
+   "year": 2004
+  },
+  {
+   "id": "szeliski2022computer",
+   "title": "Computer Vision: Algorithms and Applications (2nd ed.)",
+   "year": 2022
+  },
+  {
+   "id": "horn1989shape",
+   "title": "Shape from Shading",
+   "year": 1989
+  },
+  {
+   "id": "hart1996sphere",
+   "title": "Sphere Tracing: A Geometric Method for the Antialiased Ray Tracing of Implicit Surfaces",
+   "year": 1996
+  },
+  {
+   "id": "yuille2006vision",
+   "title": "Vision as Bayesian Inference: Analysis by Synthesis?",
+   "year": 2006
+  },
+  {
+   "id": "bergstra2012random",
+   "title": "Random Search for Hyper-Parameter Optimization",
+   "year": 2012
+  },
+  {
+   "id": "kato2020differentiable",
+   "title": "Differentiable Rendering: A Survey",
+   "year": 2020
+  },
+  {
+   "id": "loper2014opendr",
+   "title": "OpenDR: An Approximate Differentiable Renderer",
+   "year": 2014
+  },
+  {
+   "id": "laurentini1994visual",
+   "title": "The Visual Hull Concept for Silhouette-Based Image Understanding",
+   "year": 1994
+  },
+  {
+   "id": "kutulakos2000theory",
+   "title": "A Theory of Shape by Space Carving",
+   "year": 2000
+  },
+  {
+   "id": "curless1996volumetric",
+   "title": "A Volumetric Method for Building Complex Models from Range Images",
+   "year": 1996
+  },
+  {
+   "id": "newcombe2011kinectfusion",
+   "title": "KinectFusion: Real-Time Dense Surface Mapping and Tracking",
+   "year": 2011
+  }
+ ]
+}
