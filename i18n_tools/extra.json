@@ -1,0 +1,242 @@
+{
+"중급": {
+"en": "Intermediate",
+"zh": "中级",
+"ja": "中級",
+"ru": "Средний уровень",
+"uz": "Oʻrta daraja",
+"vi": "Trung cấp"
+},
+"입문": {
+"en": "Beginner",
+"zh": "入门",
+"ja": "入門",
+"ru": "Начальный уровень",
+"uz": "Boshlangʻich daraja",
+"vi": "Nhập môn"
+},
+"기초": {
+"en": "Basic",
+"zh": "基础",
+"ja": "基礎",
+"ru": "Базовый уровень",
+"uz": "Asosiy daraja",
+"vi": "Cơ bản"
+},
+"입문~중급": {
+"en": "Beginner to intermediate",
+"zh": "入门～中级",
+"ja": "入門〜中級",
+"ru": "От начального до среднего",
+"uz": "Boshlangʻichdan oʻrta darajagacha",
+"vi": "Nhập môn đến trung cấp"
+},
+"AI 보조 제작": {
+"en": "AI-assisted production",
+"zh": "AI辅助制作",
+"ja": "AI支援による制作",
+"ru": "Создано при помощи ИИ",
+"uz": "AI yordamida tayyorlangan",
+"vi": "Sản xuất với sự hỗ trợ của AI"
+},
+"(주)M-Robo": {
+"en": "M-Robo Co., Ltd.",
+"zh": "M-Robo公司",
+"ja": "株式会社M-Robo",
+"ru": "компания M-Robo",
+"uz": "M-Robo kompaniyasi",
+"vi": "Công ty M-Robo"
+},
+"안상선": {
+"en": "Ahn Sangsun",
+"zh": "Ahn Sangsun",
+"ja": "Ahn Sangsun",
+"ru": "Ahn Sangsun",
+"uz": "Ahn Sangsun",
+"vi": "Ahn Sangsun"
+},
+"안": {
+"en": "Ahn",
+"zh": "Ahn",
+"ja": "Ahn",
+"ru": "Ahn",
+"uz": "Ahn",
+"vi": "Ahn"
+},
+"상선": {
+"en": "Sangsun",
+"zh": "Sangsun",
+"ja": "Sangsun",
+"ru": "Sangsun",
+"uz": "Sangsun",
+"vi": "Sangsun"
+},
+"본문": {
+"en": "main text",
+"zh": "正文",
+"ja": "本文",
+"ru": "основной текст",
+"uz": "asosiy matn",
+"vi": "phần nội dung"
+},
+"본문 정의": {
+"en": "definition in the text",
+"zh": "正文中的定义",
+"ja": "本文の定義",
+"ru": "определение в тексте",
+"uz": "matndagi taʼrif",
+"vi": "định nghĩa trong bài"
+},
+"실험": {
+"en": "experiment",
+"zh": "实验",
+"ja": "実験",
+"ru": "эксперимент",
+"uz": "tajriba",
+"vi": "thí nghiệm"
+},
+"초록": {
+"en": "abstract",
+"zh": "摘要",
+"ja": "要旨",
+"ru": "аннотация",
+"uz": "annotatsiya",
+"vi": "tóm tắt"
+},
+"학습 자료": {
+"en": "learning materials",
+"zh": "学习资料",
+"ja": "学習資料",
+"ru": "учебные материалы",
+"uz": "oʻquv materiallari",
+"vi": "tài liệu học tập"
+},
+"발표 자료": {
+"en": "presentation slides",
+"zh": "演示资料",
+"ja": "発表資料",
+"ru": "материалы доклада",
+"uz": "taqdimot materiallari",
+"vi": "tài liệu thuyết trình"
+},
+"1장": {
+"en": "ch. 1",
+"zh": "第1章",
+"ja": "第1章",
+"ru": "гл. 1",
+"uz": "1-bob",
+"vi": "chương 1"
+},
+"2장": {
+"en": "ch. 2",
+"zh": "第2章",
+"ja": "第2章",
+"ru": "гл. 2",
+"uz": "2-bob",
+"vi": "chương 2"
+},
+"6장": {
+"en": "ch. 6",
+"zh": "第6章",
+"ja": "第6章",
+"ru": "гл. 6",
+"uz": "6-bob",
+"vi": "chương 6"
+},
+"16쪽": {
+"en": "p. 16",
+"zh": "第16页",
+"ja": "16ページ",
+"ru": "с. 16",
+"uz": "16-bet",
+"vi": "tr. 16"
+},
+"예시 설명": {
+"en": "example explanation",
+"zh": "示例说明",
+"ja": "例の説明",
+"ru": "пояснение к примеру",
+"uz": "misol izohi",
+"vi": "phần giải thích ví dụ"
+},
+"작동 원리 목록": {
+"en": "list of how it works",
+"zh": "工作原理列表",
+"ja": "仕組みの一覧",
+"ru": "список принципов работы",
+"uz": "ishlash tamoyillari roʻyxati",
+"vi": "danh sách nguyên lý hoạt động"
+},
+"품질 모드 표": {
+"en": "quality mode table",
+"zh": "质量模式表",
+"ja": "品質モード表",
+"ru": "таблица режимов качества",
+"uz": "sifat rejimlari jadvali",
+"vi": "bảng chế độ chất lượng"
+},
+"손 필터의 위험": {
+"en": "risks of hand-tuned filters",
+"zh": "手工滤波器的风险",
+"ja": "手調整フィルターの危うさ",
+"ru": "риски ручных фильтров",
+"uz": "qoʻlda sozlangan filtrlar xavfi",
+"vi": "rủi ro của bộ lọc chỉnh tay"
+},
+"DLSS 4.5 항목": {
+"en": "DLSS 4.5 section",
+"zh": "DLSS 4.5 条目",
+"ja": "DLSS 4.5 の項目",
+"ru": "раздел DLSS 4.5",
+"uz": "DLSS 4.5 boʻlimi",
+"vi": "mục DLSS 4.5"
+},
+"Frame Generation 설명": {
+"en": "Frame Generation description",
+"zh": "Frame Generation 说明",
+"ja": "Frame Generation の説明",
+"ru": "описание Frame Generation",
+"uz": "Frame Generation tavsifi",
+"vi": "phần mô tả Frame Generation"
+},
+"Ray Reconstruction 설명": {
+"en": "Ray Reconstruction description",
+"zh": "Ray Reconstruction 说明",
+"ja": "Ray Reconstruction の説明",
+"ru": "описание Ray Reconstruction",
+"uz": "Ray Reconstruction tavsifi",
+"vi": "phần mô tả Ray Reconstruction"
+},
+"Reflex 사례": {
+"en": "Reflex example",
+"zh": "Reflex 案例",
+"ja": "Reflex の事例",
+"ru": "пример Reflex",
+"uz": "Reflex misoli",
+"vi": "ví dụ Reflex"
+},
+"fruitfly-lab-expressions — 연구실 캐릭터 표정 팩 (커밋 ea5da3f)": {
+"en": "fruitfly-lab-expressions — lab character expression pack (commit ea5da3f)",
+"zh": "fruitfly-lab-expressions——研究室角色表情包（提交 ea5da3f）",
+"ja": "fruitfly-lab-expressions — 研究室キャラクター表情パック（コミット ea5da3f）",
+"ru": "fruitfly-lab-expressions — набор выражений персонажей лаборатории (коммит ea5da3f)",
+"uz": "fruitfly-lab-expressions — laboratoriya qahramonlari ifodalari toʻplami (commit ea5da3f)",
+"vi": "fruitfly-lab-expressions — bộ biểu cảm nhân vật phòng thí nghiệm (commit ea5da3f)"
+},
+"Neural Radiance Fields and Gaussian Splatting — 2024.10.17 2차 강의 노트": {
+"en": "Neural Radiance Fields and Gaussian Splatting — lecture notes, session 2 (2024.10.17)",
+"zh": "Neural Radiance Fields and Gaussian Splatting——第2次讲义（2024.10.17）",
+"ja": "Neural Radiance Fields and Gaussian Splatting — 第2回講義ノート（2024.10.17）",
+"ru": "Neural Radiance Fields and Gaussian Splatting — конспект 2-й лекции (2024.10.17)",
+"uz": "Neural Radiance Fields and Gaussian Splatting — 2-maʼruza qaydlari (2024.10.17)",
+"vi": "Neural Radiance Fields and Gaussian Splatting — ghi chú bài giảng buổi 2 (2024.10.17)"
+},
+"저자 강의 노트 (미공개)": {
+"en": "Author's lecture notes (unpublished)",
+"zh": "作者讲义（未公开）",
+"ja": "著者の講義ノート（未公開）",
+"ru": "конспект лекций автора (не опубликован)",
+"uz": "muallifning maʼruza qaydlari (eʼlon qilinmagan)",
+"vi": "ghi chú bài giảng của tác giả (chưa công bố)"
+}
+}

@@ -1,0 +1,562 @@
+{
+"AI 렌더링 연구실": {
+"en": "AI Rendering Lab",
+"zh": "AI渲染研究室",
+"ja": "AIレンダリング研究室",
+"ru": "Лаборатория ИИ-рендеринга",
+"uz": "AI renderlash laboratoriyasi",
+"vi": "Phòng thí nghiệm Kết xuất AI"
+},
+"2부 렌더링을 거꾸로": {
+"en": "Part 2: Rendering in Reverse",
+"zh": "第2部 逆向渲染",
+"ja": "第2部 レンダリングを逆に",
+"ru": "Часть 2. Рендеринг наоборот",
+"uz": "2-qism. Renderlashni teskari",
+"vi": "Phần 2: Kết xuất ngược"
+},
+"안상선 ((주)M-Robo 대표)": {
+"en": "Ahn Sangsun (CEO, M-Robo Inc.)",
+"zh": "Ahn Sangsun（M-Robo公司 代表）",
+"ja": "Ahn Sangsun（株式会社M-Robo 代表）",
+"ru": "Ahn Sangsun (генеральный директор M-Robo Inc.)",
+"uz": "Ahn Sangsun (M-Robo Inc. rahbari)",
+"vi": "Ahn Sangsun (Giám đốc M-Robo Inc.)"
+},
+"박사": {
+"en": "Doctor",
+"zh": "博士",
+"ja": "博士",
+"ru": "Доктор",
+"uz": "Doktor",
+"vi": "Tiến sĩ"
+},
+"조수 (하루)": {
+"en": "Assistant (Haru)",
+"zh": "助手（Haru）",
+"ja": "助手（ハル）",
+"ru": "Ассистентка (Хару)",
+"uz": "Yordamchi (Haru)",
+"vi": "Trợ lý (Haru)"
+},
+"조수": {
+"en": "Assistant",
+"zh": "助手",
+"ja": "助手",
+"ru": "Ассистентка",
+"uz": "Yordamchi",
+"vi": "Trợ lý"
+},
+"초파리 연구원": {
+"en": "Fruit Fly Researcher",
+"zh": "果蝇研究员",
+"ja": "ショウジョウバエ研究員",
+"ru": "Исследователь-дрозофила",
+"uz": "Meva pashshasi tadqiqotchi",
+"vi": "Nhà nghiên cứu Ruồi giấm"
+},
+"초파리": {
+"en": "Fruit Fly",
+"zh": "果蝇",
+"ja": "ショウジョウバエ",
+"ru": "Дрозофила",
+"uz": "Meva pashshasi",
+"vi": "Ruồi giấm"
+},
+"머그컵": {
+"en": "mug",
+"zh": "马克杯",
+"ja": "マグカップ",
+"ru": "кружка",
+"uz": "krujka",
+"vi": "cốc"
+},
+"실루엣": {
+"en": "silhouette",
+"zh": "剪影",
+"ja": "シルエット",
+"ru": "силуэт",
+"uz": "siluet",
+"vi": "hình bóng"
+},
+"깊이 사진": {
+"en": "depth map",
+"zh": "深度图",
+"ja": "深度画像",
+"ru": "карта глубины",
+"uz": "chuqurlik xaritasi",
+"vi": "ảnh độ sâu"
+},
+"깊이 카메라": {
+"en": "depth camera",
+"zh": "深度相机",
+"ja": "深度カメラ",
+"ru": "камера глубины",
+"uz": "chuqurlik kamerasi",
+"vi": "camera độ sâu"
+},
+"시각 껍질": {
+"en": "visual hull",
+"zh": "视觉外壳",
+"ja": "ビジュアルハル",
+"ru": "визуальная оболочка",
+"uz": "vizual qobiq",
+"vi": "vỏ thị giác"
+},
+"부피 격자": {
+"en": "voxel grid",
+"zh": "体素网格",
+"ja": "ボクセルグリッド",
+"ru": "воксельная сетка",
+"uz": "voksel toʻri",
+"vi": "lưới voxel"
+},
+"빈 곳 깎기": {
+"en": "free-space carving",
+"zh": "空域雕刻",
+"ja": "空き領域の削り出し",
+"ru": "вырезание свободного пространства",
+"uz": "boʻsh joyni oʻyib olish",
+"vi": "khắc vùng trống"
+},
+"봉인된 새 각도": {
+"en": "sealed new views",
+"zh": "封存的新视角",
+"ja": "封印された新しい角度",
+"ru": "запечатанные новые ракурсы",
+"uz": "muhrlangan yangi burchaklar",
+"vi": "góc nhìn mới được niêm phong"
+},
+"겹친 비율": {
+"en": "overlap ratio (IoU)",
+"zh": "重叠率（IoU）",
+"ja": "重なり率（IoU）",
+"ru": "доля перекрытия (IoU)",
+"uz": "ustma-ust tushish ulushi (IoU)",
+"vi": "tỷ lệ chồng khớp (IoU)"
+},
+"깊이 잡음": {
+"en": "depth noise",
+"zh": "深度噪声",
+"ja": "深度ノイズ",
+"ru": "шум глубины",
+"uz": "chuqurlik shovqini",
+"vi": "nhiễu độ sâu"
+},
+"투표": {
+"en": "voting",
+"zh": "投票",
+"ja": "投票",
+"ru": "голосование",
+"uz": "ovoz berish",
+"vi": "bỏ phiếu"
+},
+"컵 밑 쐐기": {
+"en": "wedge under the cup",
+"zh": "杯底楔块",
+"ja": "カップ下のくさび",
+"ru": "клин под кружкой",
+"uz": "krujka ostidagi pona",
+"vi": "khối nêm dưới cốc"
+},
+"천장": {
+"en": "ceiling",
+"zh": "上限",
+"ja": "天井",
+"ru": "потолок",
+"uz": "yuqori chegara",
+"vi": "mức trần"
+},
+"대결": {
+"en": "Duel",
+"zh": "对决",
+"ja": "対決",
+"ru": "Поединок",
+"uz": "Bellashuv",
+"vi": "Đấu trí"
+},
+"설명용 모형": {
+"en": "illustrative model",
+"zh": "示意模型",
+"ja": "説明用モデル",
+"ru": "иллюстративная модель",
+"uz": "tushuntirish modeli",
+"vi": "mô hình minh họa"
+},
+"직접 해 보기": {
+"en": "Try it yourself",
+"zh": "动手试试",
+"ja": "やってみよう",
+"ru": "Попробуйте сами",
+"uz": "Oʻzingiz sinab koʻring",
+"vi": "Tự thử"
+},
+"행동으로 보기": {
+"en": "See it in action",
+"zh": "看它动起来",
+"ja": "動きで見る",
+"ru": "Посмотрите в действии",
+"uz": "Harakatda koʻring",
+"vi": "Xem trực quan"
+},
+"수식으로 보기": {
+"en": "The math",
+"zh": "用公式看",
+"ja": "数式で見る",
+"ru": "Формулы",
+"uz": "Formulalarda",
+"vi": "Xem bằng công thức"
+},
+"교육자를 위한 TIP": {
+"en": "Tips for educators",
+"zh": "给教师的提示",
+"ja": "教育者向けTIP",
+"ru": "Советы преподавателям",
+"uz": "Oʻqituvchilar uchun maslahatlar",
+"vi": "Mẹo cho nhà giáo"
+},
+"지식 색인": {
+"en": "knowledge index",
+"zh": "知识索引",
+"ja": "知識インデックス",
+"ru": "указатель знаний",
+"uz": "bilim indeksi",
+"vi": "chỉ mục kiến thức"
+},
+"꾸러미": {
+"en": "package",
+"zh": "资料包",
+"ja": "パッケージ",
+"ru": "пакет материалов",
+"uz": "materiallar toʻplami",
+"vi": "gói tài liệu"
+},
+"중간 미션": {
+"en": "midpoint mission",
+"zh": "中期任务",
+"ja": "中間ミッション",
+"ru": "промежуточная миссия",
+"uz": "oraliq missiya",
+"vi": "nhiệm vụ giữa chặng"
+},
+"렌더링": {
+"en": "rendering",
+"zh": "渲染",
+"ja": "レンダリング",
+"ru": "рендеринг",
+"uz": "renderlash",
+"vi": "kết xuất"
+},
+"역렌더링": {
+"en": "inverse rendering",
+"zh": "逆向渲染",
+"ja": "逆レンダリング",
+"ru": "обратный рендеринг",
+"uz": "teskari renderlash",
+"vi": "kết xuất ngược"
+},
+"공간 깎기": {
+"en": "space carving",
+"zh": "空间雕刻",
+"ja": "空間カービング",
+"ru": "вырезание пространства",
+"uz": "fazoni oʻyish",
+"vi": "khắc không gian"
+},
+"가려짐": {
+"en": "occlusion",
+"zh": "遮挡",
+"ja": "遮蔽",
+"ru": "перекрытие",
+"uz": "toʻsilish",
+"vi": "che khuất"
+},
+"자금난": {
+"en": "budget crunch",
+"zh": "资金困难",
+"ja": "資金難",
+"ru": "нехватка денег",
+"uz": "pul taqchilligi",
+"vi": "cháy túi"
+},
+"1부 정답표 없이 배우기": {
+"en": "Part 1: Learning without an answer key",
+"zh": "第1部 没有答案也能学",
+"ja": "第1部 正解表なしで学ぶ",
+"ru": "Часть 1. Учимся без ключа ответов",
+"uz": "1-qism. Javoblar kalitisiz oʻrganish",
+"vi": "Phần 1: Học không cần đáp án"
+},
+"3부 적게 그리고 AI로 채우기": {
+"en": "Part 3: Render less, fill in with AI",
+"zh": "第3部 少画一点，交给AI补全",
+"ja": "第3部 少なく描いてAIで埋める",
+"ru": "Часть 3. Рисуем меньше, остальное дорисует ИИ",
+"uz": "3-qism. Kamroq chizing, qolganini AI toʻldiradi",
+"vi": "Phần 3: Vẽ ít hơn, để AI lấp đầy"
+},
+"정답표": {
+"en": "answer key",
+"zh": "答案表",
+"ja": "正解表",
+"ru": "ключ ответов",
+"uz": "javoblar kaliti",
+"vi": "bảng đáp án"
+},
+"이름표": {
+"en": "label",
+"zh": "标签",
+"ja": "ラベル",
+"ru": "метка",
+"uz": "yorliq",
+"vi": "nhãn"
+},
+"비지도 학습": {
+"en": "unsupervised learning",
+"zh": "无监督学习",
+"ja": "教師なし学習",
+"ru": "обучение без учителя",
+"uz": "nazoratsiz oʻrganish",
+"vi": "học không giám sát"
+},
+"자기 지도 학습": {
+"en": "self-supervised learning",
+"zh": "自监督学习",
+"ja": "自己教師あり学習",
+"ru": "самостоятельное обучение (self-supervised)",
+"uz": "oʻz-oʻzini nazorat qilib oʻrganish",
+"vi": "học tự giám sát"
+},
+"지도 학습": {
+"en": "supervised learning",
+"zh": "监督学习",
+"ja": "教師あり学習",
+"ru": "обучение с учителем",
+"uz": "nazoratli oʻrganish",
+"vi": "học có giám sát"
+},
+"테트리스 블록": {
+"en": "Tetris blocks",
+"zh": "俄罗斯方块",
+"ja": "テトリスブロック",
+"ru": "блоки тетриса",
+"uz": "tetris bloklari",
+"vi": "khối Tetris"
+},
+"주머니": {
+"en": "pouch",
+"zh": "口袋",
+"ja": "袋",
+"ru": "мешочек",
+"uz": "xalta",
+"vi": "túi"
+},
+"묶기": {
+"en": "grouping",
+"zh": "分组",
+"ja": "グループ分け",
+"ru": "группировка",
+"uz": "guruhlash",
+"vi": "gom nhóm"
+},
+"주성분": {
+"en": "principal component",
+"zh": "主成分",
+"ja": "主成分",
+"ru": "главная компонента",
+"uz": "bosh komponenta",
+"vi": "thành phần chính"
+},
+"가리고 맞히기": {
+"en": "mask and predict",
+"zh": "遮住再猜",
+"ja": "隠して当てる",
+"ru": "закрой и угадай",
+"uz": "yopib topish",
+"vi": "che rồi đoán"
+},
+"가장 가까운 이웃": {
+"en": "nearest neighbor",
+"zh": "最近邻",
+"ja": "最近傍",
+"ru": "ближайший сосед",
+"uz": "eng yaqin qoʻshni",
+"vi": "láng giềng gần nhất"
+},
+"슈퍼 해상도": {
+"en": "super resolution",
+"zh": "超分辨率",
+"ja": "超解像",
+"ru": "сверхразрешение",
+"uz": "super ruxsat",
+"vi": "siêu phân giải"
+},
+"업스케일러": {
+"en": "upscaler",
+"zh": "放大器",
+"ja": "アップスケーラー",
+"ru": "апскейлер",
+"uz": "kattalashtirgich (upscaler)",
+"vi": "bộ nâng cấp độ phân giải"
+},
+"쌍선형": {
+"en": "bilinear",
+"zh": "双线性",
+"ja": "バイリニア",
+"ru": "билинейная",
+"uz": "bichiziqli",
+"vi": "song tuyến"
+},
+"최근접": {
+"en": "nearest-neighbor",
+"zh": "最近邻",
+"ja": "ニアレストネイバー",
+"ru": "ближайший пиксель",
+"uz": "eng yaqin piksel",
+"vi": "lân cận gần nhất"
+},
+"지터": {
+"en": "jitter",
+"zh": "抖动",
+"ja": "ジッター",
+"ru": "джиттер",
+"uz": "jitter",
+"vi": "rung lệch (jitter)"
+},
+"모션 벡터": {
+"en": "motion vectors",
+"zh": "运动矢量",
+"ja": "モーションベクトル",
+"ru": "векторы движения",
+"uz": "harakat vektorlari",
+"vi": "vectơ chuyển động"
+},
+"광학 흐름": {
+"en": "optical flow",
+"zh": "光流",
+"ja": "オプティカルフロー",
+"ru": "оптический поток",
+"uz": "optik oqim",
+"vi": "luồng quang học"
+},
+"프레임 생성": {
+"en": "frame generation",
+"zh": "帧生成",
+"ja": "フレーム生成",
+"ru": "генерация кадров",
+"uz": "kadr yaratish",
+"vi": "tạo khung hình"
+},
+"사이 프레임": {
+"en": "in-between frames",
+"zh": "中间帧",
+"ja": "中間フレーム",
+"ru": "промежуточные кадры",
+"uz": "oraliq kadrlar",
+"vi": "khung hình chen giữa"
+},
+"광선 추적": {
+"en": "ray tracing",
+"zh": "光线追踪",
+"ja": "レイトレーシング",
+"ru": "трассировка лучей",
+"uz": "nur kuzatish",
+"vi": "dò tia"
+},
+"노이즈 제거": {
+"en": "denoising",
+"zh": "降噪",
+"ja": "ノイズ除去",
+"ru": "шумоподавление",
+"uz": "shovqinni tozalash",
+"vi": "khử nhiễu"
+},
+"지연": {
+"en": "latency",
+"zh": "延迟",
+"ja": "遅延",
+"ru": "задержка",
+"uz": "kechikish",
+"vi": "độ trễ"
+},
+"합성에 의한 분석": {
+"en": "analysis by synthesis",
+"zh": "合成分析",
+"ja": "合成による分析",
+"ru": "анализ через синтез",
+"uz": "sintez orqali tahlil",
+"vi": "phân tích bằng tổng hợp"
+},
+"몽타주": {
+"en": "sketch (montage)",
+"zh": "模拟画像",
+"ja": "モンタージュ",
+"ru": "фоторобот",
+"uz": "fotorobot",
+"vi": "bức phác họa"
+},
+"기울기": {
+"en": "gradient",
+"zh": "梯度",
+"ja": "勾配",
+"ru": "градиент",
+"uz": "gradiyent",
+"vi": "gradient"
+},
+"미분 가능한 렌더링": {
+"en": "differentiable rendering",
+"zh": "可微渲染",
+"ja": "微分可能レンダリング",
+"ru": "дифференцируемый рендеринг",
+"uz": "differensiallanuvchi renderlash",
+"vi": "kết xuất khả vi"
+},
+"핀홀": {
+"en": "pinhole",
+"zh": "针孔",
+"ja": "ピンホール",
+"ru": "камера-обскура",
+"uz": "teshikcha kamera",
+"vi": "lỗ kim"
+},
+"흉상": {
+"en": "bust",
+"zh": "半身像",
+"ja": "胸像",
+"ru": "бюст",
+"uz": "byust",
+"vi": "tượng bán thân"
+},
+"최종 미션": {
+"en": "final mission",
+"zh": "最终任务",
+"ja": "最終ミッション",
+"ru": "финальная миссия",
+"uz": "yakuniy missiya",
+"vi": "nhiệm vụ cuối"
+},
+"봉인된 시험 사진": {
+"en": "sealed test photos",
+"zh": "封存的测试照片",
+"ja": "封印されたテスト写真",
+"ru": "запечатанные тестовые фото",
+"uz": "muhrlangan sinov rasmlari",
+"vi": "ảnh kiểm tra được niêm phong"
+},
+"주판봇": {
+"en": "AbaBot",
+"zh": "算盘宝",
+"ja": "アバボット",
+"ru": "АбаБот",
+"uz": "AbaBot",
+"vi": "AbaBot"
+},
+"주판알": {
+"en": "abacus bead",
+"zh": "算盘珠",
+"ja": "そろばん玉",
+"ru": "костяшка счётов",
+"uz": "choʻt toshi",
+"vi": "hạt bàn tính"
+}
+}
